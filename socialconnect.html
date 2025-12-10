@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Connect | BalaSubramani Kuppusamy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* --- SHARED THEME WITH MAIN PORTFOLIO PAGE --- */
+
+    body {
+      background: linear-gradient(135deg, #052657, #f4f2f4, #dfede6);
+      color: #00050a;
+      font-family: "Inter", sans-serif;
+      overflow-y: auto;
+    }
+
+
+    /* Glass card style */
+    .glass {
+      background: rgba(72, 97, 131, 0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      color: #f1f5f9;
+      box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.03);
+      transition: all 0.3s ease;
+    }
+
+
+    h1, h2, h3, h4 {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* HubSpot form theme override (keep white on dark) */
+    .hs-form-frame * {
+      color: white !important;
+    }
+
+    .hs-form-frame input,
+    .hs-form-frame textarea {
+      background-color: #020617 !important; /* near-black */
+      color: white !important;
+      border-color: #1e293b !important;
+    }
+
+    .hs-form-frame button {
+      background: linear-gradient(to right, #6366f1, #3b82f6) !important;
+      color: white !important;
+      border: none !important;
+    }
+  </style>
+</head>
+
+<body class="text-slate-100 leading-relaxed">
+
+  <!-- Header (match main site style) -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-[#021d4e]/95 via-[#03122f]/95 to-[#060b14]/95 
+                 backdrop-blur-lg border-b border-blue-900/40 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div class="flex flex-col gap-1">
+        <span class="text-2xl font-semibold text-white tracking-wide">Bala</span>
+        <span class="text-xs text-blue-200 font-light">
+          Cloud & DevOps Architect • Head of DevOps & Infrastructure Engineering
+        </span>
+      </div>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="index.html" class="text-slate-200 hover:text-[#f2ff03] transition">Home</a>
+        <a href="#social-links" class="text-slate-200 hover:text-[#f2ff03] transition">Social</a>
+        <a href="#contact" class="text-slate-200 hover:text-[#f2ff03] transition">Contact</a>
+      </nav>
+
+      <!-- Mobile: just a Home button -->
+      <div class="md:hidden">
+        <a href="index.html"
+           class="text-sm px-3 py-2 bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] 
+                  text-white rounded-lg shadow hover:shadow-blue-400/40 transition">
+          Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title / Intro -->
+  <section class="max-w-6xl mx-auto mt-10 px-6 py-10 rounded-3xl 
+                  bg-gradient-to-br from-[#021d4e] via-[#03122f] to-[#060b14]
+                  shadow-2xl border border-blue-800/30">
+    <div class="text-center max-w-3xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text 
+                 bg-gradient-to-r from-[#f2ff03] to-[#fa7f03]">
+        Connect with Me
+      </h1>
+      <p class="text-slate-200 mt-3 text-sm md:text-base">
+        Follow me on social platforms or send a message directly for collaborations, consulting, 
+        training, or cloud & DevOps projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Social Links Section -->
+  <section id="social-links" class="max-w-6xl mx-auto mt-8 px-6">
+    <div class="glass rounded-2xl p-8 shadow-lg bg-gradient-to-br from-[#020617] via-[#020617] to-[#020617]">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-blue-300 text-center">
+        Social Profiles
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+
+        <!-- GitHub -->
+        <a href="https://github.com/bala-kubelancer" target="_blank"
+           class="glass bg-gradient-to-br from-slate-800/80 via-slate-900/80 to-black/90 
+                  flex flex-col items-center hover:shadow-blue-500/40 hover:-translate-y-1">
+          <svg class="w-10 h-10 text-white mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.22-.124-.303-.536-1.523.116-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.403 11.5 11.5 0 0 1 3 .403c2.29-1.552 3.296-1.23 3.296-1.23.654 1.653.242 2.873.118 3.176.77.838 1.234 1.91 1.234 3.22 0 4.61-2.807 5.624-5.48 5.922.43.37.823 1.103.823 2.222v3.293c0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.63-5.373-12-12-12z"/>
+          </svg>
+          <h3 class="text-xl font-semibold mb-1">GitHub</h3>
+          <p class="text-slate-200 text-sm">View my projects and repositories</p>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/bala-kubelancer/" target="_blank"
+           class="glass bg-gradient-to-br from-sky-900/80 via-sky-950/80 to-slate-900/90 
+                  flex flex-col items-center hover:shadow-sky-400/40 hover:-translate-y-1">
+          <svg class="w-10 h-10 text-white mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zm7.5-17h4.78v2.43h.07c.67-1.26 2.31-2.59 4.75-2.59 5.08 0 6 3.33 6 7.65V24h-5v-7.46c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.94V24h-5V7z"/>
+          </svg>
+          <h3 class="text-xl font-semibold mb-1">LinkedIn</h3>
+          <p class="text-slate-200 text-sm">Connect with me professionally</p>
+        </a>
+
+        <!-- Medium -->
+        <a href="https://medium.com/@bala-kubelancer" target="_blank"
+           class="glass bg-gradient-to-br from-emerald-900/80 via-emerald-950/80 to-slate-900/90 
+                  flex flex-col items-center hover:shadow-emerald-400/40 hover:-translate-y-1">
+          <svg class="w-10 h-10 text-white mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M2.5 6.5v11h19v-11h-19zm0-2h19c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2h-19c-1.1 0-2-.9-2-2v-11c0-1.1.9-2 2-2zm4.5 3h-2v8h2v-8zm3 0h-2v8h2v-8zm3 0h-2v8h2v-8z"/>
+          </svg>
+          <h3 class="text-xl font-semibold mb-1">Medium</h3>
+          <p class="text-slate-200 text-sm">Read my blog articles</p>
+        </a>
+
+        <!-- X / Twitter -->
+        <a href="https://x.com/bala_kubelancer" target="_blank"
+           class="glass bg-gradient-to-br from-slate-900/80 via-slate-950/80 to-black/90 
+                  flex flex-col items-center hover:shadow-slate-400/40 hover:-translate-y-1">
+          <svg class="w-10 h-10 text-white mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.94 13.94 0 0 1 1.671 3.149a4.916 4.916 0 0 0 1.523 6.574 4.897 4.897 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.919 4.919 0 0 0 4.593 3.417 9.867 9.867 0 0 1-6.102 2.105c-.396 0-.787-.023-1.175-.068A13.945 13.945 0 0 0 7.548 21c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0 0 24 4.557z"/>
+          </svg>
+          <h3 class="text-xl font-semibold mb-1">X / Twitter</h3>
+          <p class="text-slate-200 text-sm">Follow me for updates</p>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@kubelancerprivatelimited7403" target="_blank"
+           class="glass bg-gradient-to-br from-red-900/80 via-red-950/80 to-slate-900/90 
+                  flex flex-col items-center hover:shadow-red-400/40 hover:-translate-y-1">
+          <svg class="w-10 h-10 text-white mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a2.998 2.998 0 0 0-2.118-2.12C19.452 3.5 12 3.5 12 3.5s-7.452 0-9.38.566a2.998 2.998 0 0 0-2.118 2.12A31.004 31.004 0 0 0 0 12a31.004 31.004 0 0 0 .502 5.814 2.998 2.998 0 0 0 2.118 2.12c1.928.566 9.38.566 9.38.566s7.452 0 9.38-.566a2.998 2.998 0 0 0 2.118-2.12A31.004 31.004 0 0 0 24 12a31.004 31.004 0 0 0-.502-5.814zM9.75 15.02V8.98l6 3.02-6 3.02z"/>
+          </svg>
+          <h3 class="text-xl font-semibold mb-1">YouTube</h3>
+          <p class="text-slate-200 text-sm">Watch my videos and tutorials</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section (Perfectly Aligned & Styled) -->
+<section id="contact" class="max-w-6xl mx-auto px-6 mt-16 fade-in">
+  <div class="rounded-3xl p-10 shadow-2xl border border-blue-800/30 
+              bg-gradient-to-br from-[#021d4e] via-[#03122f] to-[#060b14]">
+
+    <!-- Right Column (Form) -->
+    <div class="glass rounded-2xl p-6 shadow-lg bg-white/10 border border-slate-700/40 text-white">
+      <h3 class="text-xl font-semibold text-white mb-4 text-center">Send a Message</h3>
+
+      <div class="bg-white rounded-xl p-4 shadow-inner">
+        <script src="https://js-na2.hsforms.net/forms/embed/244042176.js" defer></script>
+        <div class="hs-form-frame" 
+             data-region="na2" 
+             data-form-id="014a4c32-c16a-4bf7-9808-1f7d03848a10" 
+             data-portal-id="244042176"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Footer (match portfolio footer style) -->
+  <footer class="mt-4 bg-gradient-to-r from-[#021d4e]/95 via-[#03122f]/95 to-[#060b14]/95 
+                  text-slate-200 border-t border-blue-900/40 shadow-inner">
+    <div class="max-w-6xl mx-auto px-6 py-6 text-center">
+      <p class="text-gray-400 text-xs md:text-sm">
+        © 2025 <span class="text-slate-200">BalaSubramani Kuppusamy</span>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
